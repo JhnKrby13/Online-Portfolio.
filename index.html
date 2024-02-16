@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <div class="logo-container">
+            <img src="000.png" alt="Logo" style="width: 100px; height: auto;">
+            <span class="name">John Kirby</span>
+        </div>
+    </div>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="#" method="get" class="search-form" onsubmit="return navigateToSection()">
+        <input type="search" id="search-box" name="search-box" placeholder="Search here...">
+        <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+    </form>
+
+    <form action="#" method="post" class="login-form">
+        <h3>Login Now</h3>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" class="box" required>
+        <label for="password">Your Password:</label>
+        <input type="password" id="password" name="password" placeholder="Your Password" class="box" required>
+        <p>Forget your Password <a href="#">Click Here</a></p>
+        <p>Don't have an Account <a href="#">Create Now</a></p>
+        <input type="submit" value="Login Now" class="btn">
+    </form>
+</header>
+
+<section class="home" id="home">
+    <div class="circle-container">
+        <img src="pic.png" alt="Your Picture" class="profile-picture">
+    </div>
+    <div class="content">
+        <h3>Hi! It's me...<span>John Kirby</span></h3>
+        <h4>John Kirby M. Hao</h4>
+        <h5>And I’m a Beginner Developer!</h5>
+        <p>Becoming a beginner developer marks the commencement of a thrilling journey into the vast world of 
+        programming. With a blend of enthusiasm and curiosity, I am embarking on this path, eager to explore
+        the realms of code and technology.</p>
+        <a href="#contact" class="btn">Contact</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h1 class="heading">About<span>Me</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="pic3.jpg" alt="Profile Picture">
+            <h2>Hi Guys!</h2>
+            <p>
+                Hi Guys, 'm John Kirby so I'm gonna talk about myself. My course is Bachelor of Science in Information Technology. I'am 21 years old turning 22 this july 21, I was born in Lucena City. I have 3 brothers and I am the second to youngest. My religion is Roman Catholic and my status is Single. I love playing online games in my free time like mobile legends, call of duty mobile, wild rift, clash of clans, and faright 84. I'm interested in Movies like Marvel movies , science fiction , horror and drama, I watch this when I have free time. I like chatting with my friends to talk about our lives. I Love to listen to music to make my self entertain. i like to go to the places i never been with. sI love the color blue because it reminds me of how much I love to watch the sky and also ocean. I love rainy days because it makes my room peaceful.I love eating fruits and vegetables to make myself heathy. I also exercise a lot to be strong. I have a Pet dog named Moi I love hugging him whenever I feel sad or lonely.</p>
+            <div id="downloadCVBtn">
+                <a href="New Resume.pdf" class="downloadCVBtn">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h1 class="heading">My <span>Projects</span></h1>
+    <div class="swiper project-slider" flex-direction="row">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="11.png" alt="">
+                <h3>Online Resume</h3>
+                <a href="11.png" class="btn">Live Demo</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="22.png" alt="">
+                <h3>Calculator</h3>
+                <a href="22.png" class="btn">Live Demo</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="33.png" alt="">
+                <h3>Landing Page</h3>
+                <a href="33.png" class="btn">Live Demo</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="44.png" alt="">
+                <h3>Working Calculator</h3>
+                <a href="44.png" class="btn">Live Demo</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper project-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="55.png" alt="">
+                <h3>To Do List</h3>
+                <a href="55.png" class="btn">Live Demo</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="66.png" alt="">
+                <h3>Simple Quiz</h3>
+                <a href="66.png" class="btn">Live Demo</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="77.png" alt="">
+                <h3>JavaScript DOM AddEventListener</h3>
+                <a href="77.png" class="btn">Live Demo</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="88.png" alt="">
+                <h3>JavaScript Color Changer</h3>
+                <a href="88.png" class="btn">Live Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h1 class="heading">Contact <span>Me</span></h1>
+    <div class="box-container">
+        <button id="show-contact-form">Send me a message</button>
+        <form id="contact-form" class="hidden" method="post">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <div id="success-message" class="success-message">Message sent successfully!</div>
+        </form>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <a href="#" class="logo">
+                <div class="logo-container">
+                    <img src="000.png" alt="Logo" style="width: 100px; height: auto;">
+                    <span class="name">John Kirby</span>
+                </div>
+            </a>
+            <div class="share">
+                <a href="https://www.facebook.com/johnkirby.m.hao" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/JhnKrby13" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/johnkirbyhao/?hl=en" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#contact" class="links"> <i class="fas fa-phone"></i>0930 697 4738</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" class="links"> <i class="fas fa-envelope"></i>haojohnkirby@gmail.com</a>
+            <a href="https://www.google.com.ph/maps/@13.9367387,121.6100357,3a,75y,17.89h,72.76t/data=!3m6!1e1!3m4!1smci8hD1u5uQl-0dI7bsYIQ!2e0!7i16384!8i8192?entry=ttu" class="links"> <i class="fas fa-map-marker-alt"></i>39 M.L. Tagarao Street Barangay 3, Lucena City</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#projects" class="links"> <i class="fas fa-arrow-right"></i> project </a>
+            <a href="#contact" class="links"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
